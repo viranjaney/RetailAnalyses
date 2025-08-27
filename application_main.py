@@ -9,6 +9,7 @@ if __name__ == '__main__':
         sys.exit(-1)
     job_run_env = sys.argv[1]
     print("Creating Spark Session")
+    #Create the spark session
     spark = Utils.get_spark_session(job_run_env)
 
     logger = Log4j(spark)
